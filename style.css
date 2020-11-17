@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(img/fer.jpg);
+    background-size: cover;
+    height: 100vh;
+    font-size: 14px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+.container{
+    width: 90%;
+    margin: auto 0;
+}
+#getit{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin: 20px auto;
+
+}
+#aside{
+    margin-left: 15px;
+    margin-top: 15px;
+    width: 25%;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 85vh;
+    position: sticky;
+}
+#aside h1{
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+}
+#aside li{
+    list-style: none;
+}
+#aside a{
+    text-decoration: none;
+}
+#profile{
+    display: flex;
+    padding: 10px;
+    justify-content: start;
+    border: lightgray 1px solid;
+    border-radius: 12px;
+    margin: 10px auto;
+    width: 80%;
+}
+#profile img{
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}
+#profile h3{
+    padding-top: 10px;
+}
+
+#dash{
+    text-align: start;
+    padding-bottom: 50px;
+    border-bottom: lightgrey 1px solid;
+    width: 90%;
+    margin: 20px auto;
+}
+#dash li{
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#dash a{
+    color: rgb(94, 91, 91);
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+#dash a:hover{
+    color: blue;
+    font-weight: bold;
+}
+#dash li:hover{
+    background-color: rgb(201, 223, 243);
+    border-radius: 12px;
+    cursor: pointer;
+}
+#dash img{
+    height: 18px;
+    width: 18px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+#right{
+    padding-left: 30px;
+    width: 75%;
+    height: 90vh;
+}
+#right h1{
+    padding: 10px 20px 0;
+}
+#right img{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 16px;
+}
+#numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+#numbers h2{
+    padding: 20px 5px 0 0;
+}
+#numbers div{
+    padding: 5px 20px;
+}
+.button{
+    text-decoration: none;
+    float: right;
+    margin: 10px 20px;
+    cursor: pointer;
+    padding: 10px 30px;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: blue;    
+    border-radius: 10px;
+    font-size: 18px;
+}
+.button:hover{
+    color: white;
+}
+.highlight{
+    background-color: rgb(201, 223, 243);
+    border-radius: 12px;
+}
+@media(max-width: 768px){
+    #aside{
+        margin: 10px auto;
+        width: 35%;
+    }
+    #dash li{
+        padding: 10px 0;
+    }
+    #dash a{
+        font-size: 14px;
+    }
+    #dash img{
+        size: 9px;
+        margin-right: 5px;
+        margin-top: 0;
+    }
+    #profile{
+        display: block;
+        padding: 5px;
+    }
+    #profile img{
+        display: block;   
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    #profile h3{
+        font-size: 14px;
+        text-align: center;
+    }
+    #right{
+        padding-left: 0;
+        width: 60%;
+    }
+    #numbers{
+        display: block;
+    }
+}
